@@ -19,10 +19,16 @@ class Player {
       : warrior.rest();
   }
 
+  attackOrRescue(warrior) {
+    return warrior.feel().getUnit().isEnemy()
+      ? warrior.attack()
+      : warrior.rescue()
+  }
+
   playTurn(warrior) {
     warrior.feel().isEmpty()
       ? this.walkOrRest(warrior)
-      : warrior.attack();
+      : this.attackOrRescue(warrior)
 
     this.currentHealth = warrior.health();
   }
