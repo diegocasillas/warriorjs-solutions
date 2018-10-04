@@ -1,5 +1,7 @@
 class Player {
   playTurn(warrior) {
-    warrior.walk();
+    warrior.feel().isEmpty()
+      ? warrior.walk()
+      : warrior.attack();
   }
 }
