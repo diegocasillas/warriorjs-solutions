@@ -9,8 +9,8 @@ class Player {
 
   walkOrRest(warrior) {
     return this.fullHealth(warrior)
-          ? warrior.walk()
-          : warrior.rest();
+      ? warrior.walk()
+      : warrior.rest();
   }
 
   playTurn(warrior) {
