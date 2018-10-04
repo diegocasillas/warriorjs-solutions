@@ -1,3 +1,34 @@
-# warriorjs-solutions
+# diegocasillas - Baby Steps
 
-Navigate through the different branches of the repository to view the solution for each level.
+### _For players new to WarriorJS_
+
+## Level 1
+
+_You see before yourself a long hallway with stairs at the end. There's nothing in the way._
+
+> **TIP:** Call `warrior.walk()` to walk forward in the Player's `playTurn` method.
+
+### Floor Map
+
+```
+╔════════╗
+║@      >║
+╚════════╝
+
+@ = diegocasillas (20 HP)
+> = stairs
+```
+
+## Abilities
+
+### Actions (only one per turn)
+
+- `warrior.walk()`: Move one space in the given direction (forward by default).
+
+### Senses
+
+- `warrior.think()`: Think out loud (`console.log` replacement).
+
+## Next Steps
+
+When you're done editing `Player.js`, run the `warriorjs` command again.
